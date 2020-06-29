@@ -1,0 +1,16 @@
+<div class="toy-card" [ngClass]="cardClasses()" >
+    <h3>{{toy.title | uppercase}}</h3>
+    
+    <span [ngSwitch]="toy.category">
+        <h6 *ngSwitchCase="'infant'" class="badge badge-success"> Infants</h6>
+        <h6 *ngSwitchCase="'toddler'" class="badge badge-warning">Toddlers</h6>
+        <h6  class="badge badge-info"> Creativity</h6>
+    </span>
+    <p *ngIf="toy.description">{{toy.description}}</p>
+    
+    <button class="btn btn-dark" (click)="onToyViewed(toy.id)">View Toy</button>
+    <button class="btn btn-dark" (click)="onToyEdit(toy.id)">Edit Toy</button>
+    <button class="btn btn-dark" (click)="onToyDelete(toy.id)">Delete Toy</button>
+</div>
+
+

@@ -1,0 +1,10 @@
+
+<mat-card>
+    <h1>{{view.title}}</h1>
+    <span [ngSwitch]="view.category">
+        <h6 *ngSwitchCase="'infant'" class="badge badge-success"> Infants</h6>
+        <h6 *ngSwitchCase="'toddler'" class="badge badge-warning">Toddlers</h6>
+        <h6  class="badge badge-info"> Creativity</h6>
+    </span>
+    <p *ngIf="view.description">{{view.description}}</p>
+</mat-card>
