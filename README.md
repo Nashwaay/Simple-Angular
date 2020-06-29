@@ -6,4 +6,4 @@ The sample project explore basic features of Angular:
 * In-app navigation using routing
 * Property binding and event binding
 
-[look how it looks like in action](https://github.com/Nashwaay/Simple-Angular/blob/master/0_SinglePageApp.png)
+[Have a look at how it looks like in action](https://github.com/Nashwaay/Simple-Angular/blob/master/0_SinglePageApp.png)
